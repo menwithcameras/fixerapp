@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/fixer-logo.png" />
-    <link rel="apple-touch-icon" href="/fixer-logo.png" />
-    <link rel="icon" href="/fixer-logo.png" />
+  <head>    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; connect-src 'self' https://*.tiles.mapbox.com https://api.mapbox.com https://events.mapbox.com https://api.stripe.com; img-src 'self' blob: data: https://*.mapbox.com; style-src 'self' 'unsafe-inline' https://api.mapbox.com; script-src 'self' 'unsafe-eval' blob: https://api.mapbox.com https://js.stripe.com; worker-src blob:; frame-src https://js.stripe.com https://hooks.stripe.com;"
+    /><link rel="icon" type="image/png" href="/fixer.png" />
+    <link rel="apple-touch-icon" href="/fixer.png" />
+    <link rel="icon" href="/fixer.png" />
     <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -15,10 +16,11 @@
     <title>Fixer | Local Job Marketplace</title>
     <!-- We're using Leaflet with OpenStreetMap, not Google Maps -->
     <!-- Google Maps API is not needed and has been removed -->
+    <script type="module" crossorigin src="/assets/index-CfsDGIAb.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-B3EUo4DU.css">
   </head>
   <body>
     <div id="root"></div>
     <div id="portal-root"></div>
-    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
